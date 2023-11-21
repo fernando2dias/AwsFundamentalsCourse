@@ -10,8 +10,8 @@ var sqsClient = new AmazonSQSClient();
 var customer = new CustomerCreated
 {
     Id = Guid.NewGuid(),
-    Email = "fernando3dias@gmail.com",
-    FullName = "Fernando Dias Motta",
+    Email = "ednaldo@gmail.com",
+    FullName = "ednaldo",
     DateOfBirth = new DateTime(1986, 9, 21),
     GitHubUsername = "fernando2dias"
 };
