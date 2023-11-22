@@ -1,29 +1,23 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
-  "Description": "An AWS Serverless Application. This template is partially managed by Amazon.Lambda.Annotations (v1.0.0.0).",
+  "Description": "An AWS Serverless Application.",
   "Resources": {
-    "SimpleHttpLambdaFunctionsGetGenerated": {
+    "Get": {
       "Type": "AWS::Serverless::Function",
-      "Metadata": {
-        "Tool": "Amazon.Lambda.Annotations",
-        "SyncedEvents": [
-          "RootGet"
-        ]
-      },
       "Properties": {
         "Architectures": [
           "x86_64"
         ],
-        "Handler": "SimpleHttpLambda::SimpleHttpLambda.Functions_Get_Generated::Get",
+        "Handler": "SimpleHttpLambda::SimpleHttpLambda.Functions::Get",
         "Runtime": "dotnet6",
-        "CodeUri": ".",
+        "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,
+        "Role": null,
         "Policies": [
           "AWSLambdaBasicExecutionRole"
         ],
-        "PackageType": "Zip",
         "Events": {
           "RootGet": {
             "Type": "Api",

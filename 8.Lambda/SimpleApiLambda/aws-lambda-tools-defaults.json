@@ -12,5 +12,6 @@
   "function-runtime": "dotnet6",
   "function-memory-size": 256,
   "function-timeout": 30,
-  "function-handler": "SimpleLambda::SimpleLambda.Function::FunctionHandler"
+  "function-handler": "SimpleApiLambda",
+  "function-url-enable": true
 }
